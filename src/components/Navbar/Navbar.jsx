@@ -18,7 +18,7 @@ const Navbar = () => {
 
       {/* desktop menu */}
       <ul className='hidden md:flex space-x-4'>
-        {['HOME', 'SOBRE', 'CONTATO'].map((item) => (
+        {['home', 'sobre', 'contato'].map((item) => (
           <li key={item}>
             <Link to={item} smooth={true} duration={500} className='hover:text-accent1'>
               {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -34,7 +34,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-primaryBg flex flex-col justify-center items-center text-primaryText z-40'}>
-        {['HOME', 'SOBRE', 'CONTATO'].map((item) => (
+        {['home', 'sobre', 'contato'].map((item) => (
           <li key={item} className='py-6 text-4xl'>
             <Link to={item} smooth={true} duration={500} onClick={handleClick}>
               {item.charAt(0).toUpperCase() + item.slice(1)}

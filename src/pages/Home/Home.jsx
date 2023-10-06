@@ -48,7 +48,7 @@ const Home = () => {
 
         {/* Button */}
         <div className='z-20 mb-0'>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="sobre" smooth={true} duration={500}>
             <button className='group text-primaryText border-2 border-accent1 px-6 py-3 my-2 flex items-center font-bold hover:bg-accent1 hover:text-primaryBg'>
               Saiba Mais
               <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />

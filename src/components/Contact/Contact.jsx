@@ -29,7 +29,7 @@ function Contact() {
   // };
 
   return (
-    <div name='contact' className='w-full min-h-screen pt-[80px] bg-primaryBg flex justify-center items-center p-4'>
+    <div name='contato' className='w-full min-h-screen pt-[80px] bg-primaryBg flex justify-center items-center p-4'>
       <form className='flex flex-col max-w-[600px] w-full' action="https://formsubmit.co/87c3a66c9787bbe1bcc78c7a6081e46d" method="POST">
 
         <div className='pb-8'>
