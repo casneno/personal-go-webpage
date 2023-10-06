@@ -16,6 +16,31 @@
   }
 }
 
+/* For the regular version */
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../src/fonts/MYRIADPRO-REGULAR.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For the bold version */
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../src/fonts/MYRIADPRO-BOLD.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* For the bold italic version */
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../src/fonts/MYRIADPRO-BOLDIT.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;

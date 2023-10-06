@@ -8,12 +8,12 @@ import Contact from "../../components/Contact/Contact";
 
 function App() {
   return (
-    <div>
+    <div className='font-myriadpro'>
       <Navbar/>
       <Home />
       <About/>
-      <Skills/>
-      <Projects />
+{/*       <Skills/>
+      <Projects /> */}
       <Contact />
     </div>
   );

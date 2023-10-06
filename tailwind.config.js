@@ -9,14 +9,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-          primaryBg: '#353377',
+          primaryBg: '#124759',
           secondaryBg: '#F5F5F5',
           primaryText: '#EDEDED',
-          secondaryText: '#4E657B',
-          accent1: '#30C3A6',
+          secondaryText: '#AAB4C2',
+          accent1: '#f9aa33',
           accent2: '#0066FF',
           accent3: '#03FFA7',
-      }
+      },
+      fontFamily: {
+        'myriadpro': ['MyriadPro', 'sans'],
+      },
     },
   },
   plugins: [],
