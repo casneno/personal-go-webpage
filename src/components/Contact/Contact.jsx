@@ -7,26 +7,26 @@ function Contact() {
     setFormState({ ...formState, [event.target.name]: event.target.value });
   };
 
-  const submitHandler = (event) => {
-    event.preventDefault();
-    const config = {
-      SecureToken: '0783c68f-b982-448b-a800-93f38ba6d2a7',
-      To: 'cloudneno@gmail.com',
-      From: formState.email,
-      Subject: `${formState.name} contacted to you in PersonalGO`,
-      Body: formState.message
-    };
-    if (window.Email) {
-      window.Email.send(config)
-        .then(response => {
-          console.log(response);
-          alert('Attempted to send email');
-        })
-        .catch(error => {
-          console.error("Email error:", error);
-        });
-    }
-  };
+  // const submitHandler = (event) => {
+  //   event.preventDefault();
+  //   const config = {
+  //     SecureToken: '0783c68f-b982-448b-a800-93f38ba6d2a7',
+  //     To: 'cloudneno@gmail.com',
+  //     From: formState.email,
+  //     Subject: `${formState.name} contacted to you in PersonalGO`,
+  //     Body: formState.message
+  //   };
+  //   if (window.Email) {
+  //     window.Email.send(config)
+  //       .then(response => {
+  //         console.log(response);
+  //         alert('Attempted to send email');
+  //       })
+  //       .catch(error => {
+  //         console.error("Email error:", error);
+  //       });
+  //   }
+  // };
 
   return (
     <div name='contact' className='w-full min-h-screen pt-[80px] bg-primaryBg flex justify-center items-center p-4'>
