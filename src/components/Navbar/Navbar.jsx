@@ -43,8 +43,21 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-column top-[35%] left-0'>
+      {/* Social icons - Always Visible */}
+      <div className='absolute bottom-8 left-0 right-0 flex justify-center space-x-6 md:hidden'>
+        <a className='text-blue-700' href="https://www.linkedin.com/company/personalgoapp/about/" target="_blank" rel="noreferrer">
+          <FaLinkedin size={30} />
+        </a>
+        <a className='text-pink-600' href="https://www.instagram.com/personalgo.app/" target="_blank" rel="noreferrer">
+          <FaInstagram size={30} />
+        </a>
+        {/* <a className='text-primaryText' href="/">
+          <HiOutlineMail size={30} />
+        </a> */}
+      </div>
+
+      {/* Desktop Social icons */}
+      <div className='hidden md:flex fixed flex-column top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-tr from-yellow-200  via-pink-600 to-purple-600'>
             <a className='flex justify-between items-center w-full text-primaryText' href="https://www.instagram.com/personalgo.app/" target="_blank" rel="noreferrer">
@@ -62,18 +75,6 @@ const Navbar = () => {
             </a>
           </li> */}
         </ul>
-      </div>
-      {/* Social icons - Mobile */}
-      <div className={!nav ? 'hidden' : 'absolute bottom-8 left-0 right-0 flex justify-center space-x-6'}>
-        <a className='text-blue-700' href="https://www.linkedin.com/company/personalgoapp/about/" target="_blank" rel="noreferrer">
-          <FaLinkedin size={30} />
-        </a>
-        <a className='text-pink-600' href="https://www.instagram.com/personalgo.app/" target="_blank" rel="noreferrer">
-          <FaInstagram size={30} />
-        </a>
-        {/* <a className='text-primaryText' href="/">
-          <HiOutlineMail size={30} />
-        </a> */}
       </div>
     </div>
   )
