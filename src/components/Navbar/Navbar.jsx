@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { FaBars, FaTimes, FaLinkedin } from 'react-icons/fa';
+import { FaBars, FaTimes, FaLinkedin, FaInstagram } from 'react-icons/fa';
 /* import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs' */
 import { Link } from 'react-scroll'
@@ -18,7 +18,7 @@ const Navbar = () => {
 
       {/* desktop menu */}
       <ul className='hidden md:flex space-x-4'>
-        {['home', 'sobre', 'contato'].map((item) => (
+        {['home', 'sobre', 'inscreva-se'].map((item) => (
           <li key={item}>
             <Link to={item} smooth={true} duration={500} className='hover:text-accent1'>
               {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -34,7 +34,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-primaryBg flex flex-col justify-center items-center text-primaryText z-40'}>
-        {['home', 'sobre', 'contato'].map((item) => (
+        {['home', 'sobre', 'inscreva-se'].map((item) => (
           <li key={item} className='py-6 text-4xl'>
             <Link to={item} smooth={true} duration={500} onClick={handleClick}>
               {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -46,14 +46,14 @@ const Navbar = () => {
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-column top-[35%] left-0'>
         <ul>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-tr from-yellow-200  via-pink-600 to-purple-600'>
+            <a className='flex justify-between items-center w-full text-primaryText' href="https://www.instagram.com/personalgo.app/" target="_blank" rel="noreferrer">
+              Instagram <FaInstagram size={30} />
+            </a>
+          </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-700'>
             <a className='flex justify-between items-center w-full text-primaryText' href="https://www.linkedin.com/company/personalgoapp/about/" target="_blank" rel="noreferrer">
               LinkedIn <FaLinkedin size={30} />
-            </a>
-          </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a className='flex justify-between items-center w-full text-primaryText' href="https://github.com/casneno" target="_blank" rel="noreferrer">
-              GitHub <FaGithub size={30} />
             </a>
           </li>
           {/* <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-800'>
@@ -68,9 +68,9 @@ const Navbar = () => {
         <a className='text-blue-700' href="https://www.linkedin.com/company/personalgoapp/about/" target="_blank" rel="noreferrer">
           <FaLinkedin size={30} />
         </a>
-        {/* <a className='text-[#333333]' href="https://github.com/casneno" target="_blank" rel="noreferrer">
-          <FaGithub size={30} />
-        </a> */}
+        <a className='text-pink-600' href="https://www.instagram.com/personalgo.app/" target="_blank" rel="noreferrer">
+          <FaInstagram size={30} />
+        </a>
         {/* <a className='text-primaryText' href="/">
           <HiOutlineMail size={30} />
         </a> */}

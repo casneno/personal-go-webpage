@@ -54,7 +54,7 @@ const Home = () => {
               <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />
             </button>
           </Link>
-          <Link to="contato" smooth={true} duration={500}>
+          <Link to="inscreva-se" smooth={true} duration={500}>
             <button className='group text-primaryText border-2 border-accent1 px-6 py-3 my-2 flex items-center font-bold hover:bg-accent1 hover:text-primaryBg ml-4'>
             Inscreva-se!
               <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />

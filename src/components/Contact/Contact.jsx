@@ -31,7 +31,7 @@ function Contact() {
   return (
     <div>
 
-      <div name='contato' className='w-full h-auto pt-[80px] bg-primaryBg flex justify-center items-center p-4'>
+      <div name='inscreva-se' className='w-full h-auto pt-[80px] bg-primaryBg flex justify-center items-center p-4'>
         <form className='flex flex-col max-w-[600px] w-full' action="https://formsubmit.co/dab8a2a1894adcfc80c9711b2b6da895" method="POST">
 
           <div className='pb-8'>
