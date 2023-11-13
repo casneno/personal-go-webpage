@@ -42,15 +42,21 @@ const Home = () => {
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full'>
 
         {/* Logo */}
-        <div className="mb-[-230px] w-[600px] h-[600px] flex justify-center items-center z-20">
-          <img src={logo} alt="Your Logo" className="w-full h-auto" />
-        </div>
+        <div className="flex justify-center items-center z-20 w-full md:w-[50vw] h-auto">
+        <img src={logo} alt="Your Logo" className="w-full h-auto" />
+      </div>
 
         {/* Button */}
-        <div className='z-20 mb-0'>
+        <div className='z-20 mt-4 flex flex-col sm:flex-row items-center'>
           <Link to="sobre" smooth={true} duration={500}>
             <button className='group text-primaryText border-2 border-accent1 px-6 py-3 my-2 flex items-center font-bold hover:bg-accent1 hover:text-primaryBg'>
               Saiba Mais
+              <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />
+            </button>
+          </Link>
+          <Link to="contato" smooth={true} duration={500}>
+            <button className='group text-primaryText border-2 border-accent1 px-6 py-3 my-2 flex items-center font-bold hover:bg-accent1 hover:text-primaryBg ml-4'>
+            Inscreva-se!
               <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />
             </button>
           </Link>

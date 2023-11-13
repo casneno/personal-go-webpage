@@ -51,11 +51,11 @@ const Navbar = () => {
               LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-          {/*           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a className='flex justify-between items-center w-full text-primaryText' href="https://github.com/casneno" target="_blank" rel="noreferrer">
               GitHub <FaGithub size={30} />
             </a>
-          </li> */}
+          </li>
           {/* <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-800'>
             <a className='flex justify-between items-center w-full text-primaryText' href="/">
               Email <HiOutlineMail size={30} />
