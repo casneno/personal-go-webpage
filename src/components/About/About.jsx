@@ -15,7 +15,7 @@ const About = () => {
         {/* Introduction */}
         <div className='max-w-[1000px] w-full px-4 text-center mb-8'>
           <p className='text-lg sm:text-xl text-secondaryText mb-4'>
-          Em breve você conhecerá um aplicativo que vai revolucionar a sua forma de malhar! Conecte-se ao seu personal trainer, acompanhe estatísticas precisas dos seus exercícios e receba treinos personalizados com apenas alguns toques. Se você ainda não tem personal, não se preocupe! Nossa plataforma te ajuda a encontrar o profissional perfeito, considerando seu tempo, orçamento e objetivos. Treine com eficiência, conecte-se com os melhores e transforme sua rotina fitness. Venha conhecer e sentir a diferença!
+          Em breve você conhecerá um aplicativo que vai turbinar a sua forma de malhar! Conecte-se ao seu personal trainer, acompanhe estatísticas precisas dos seus exercícios e receba treinos personalizados com apenas alguns toques. Se você ainda não tem personal, não se preocupe! Nossa plataforma te ajuda a encontrar o profissional perfeito, considerando seu tempo, orçamento e objetivos. Treine com eficiência, conecte-se com os melhores e transforme sua rotina fitness. Venha conhecer e sentir a diferença!
           </p>
         </div>
 
